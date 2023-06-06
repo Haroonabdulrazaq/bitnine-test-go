@@ -12,7 +12,7 @@ and it throws an exception of with a status code of 500, if there is an error.
 Returns
 
 ```
-{"data":[{"age":"34","name":"Jenny","phone":null,"user_id":"3"},{"age":"29","name":"Tom","phone":"1-800-123-1234","user_id":"2"},{"age":"28","name":"John","phone":null,"user_id":"1"}],"status_code":200}
+{"data":"[{\"user_id\":3,\"name\":\"Jenny\",\"age\":34,\"phone\":{\"String\":\"\",\"Valid\":false}},{\"user_id\":2,\"name\":\"Tom\",\"age\":29,\"phone\":{\"String\":\"1-800-123-1234\",\"Valid\":true}},{\"user_id\":1,\"name\":\"John\",\"age\":28,\"phone\":{\"String\":\"\",\"Valid\":false}}]","status_code":200}
 ```
 
 ## Environment/Packages

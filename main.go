@@ -85,7 +85,7 @@ func main() {
 
 	router := gin.Default()
 
-	router.GET("/users", func(c *gin.Context) {
+	router.GET("/", func(c *gin.Context) {
 		rows, err := db.Query("SELECT user_id, name, age, phone FROM public.user_table")
 		if err != nil {
 			log.Fatal(err)
